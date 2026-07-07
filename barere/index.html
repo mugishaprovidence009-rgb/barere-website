@@ -6,6 +6,16 @@
 <title>Every Child Belongs in School · Barere Program</title>
 <meta name="description" content="Barere is a youth-centered program in Rwanda helping vulnerable children return to and stay in school through education, mentorship, and sustainable family livelihoods.">
 <link rel="stylesheet" href="assets/styles.css">
+<style>
+  .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .value{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px -22px rgba(46,61,32,.4)}
+  .value .vk{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(245,184,37,.18);color:var(--sun-deep);font-family:Georgia,serif;font-size:1.35rem;font-weight:700;margin-bottom:14px}
+  .value h3{font-size:1.1rem;margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:800}
+  .value p{margin:0;color:var(--ink-soft);font-size:.97rem}
+  .center-cta{text-align:center;margin-top:34px}
+  @media(max-width:900px){.values-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.values-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -52,34 +62,112 @@
   </div>
 </section>
 
+<!-- THE CHALLENGE -->
+<section>
+  <div class="wrap serve-grid">
+    <div class="reveal">
+      <span class="eyebrow">The Challenge</span>
+      <h2 style="font-size:clamp(1.8rem,3.4vw,2.5rem);margin:0 0 16px">Too many children lose school to poverty.</h2>
+      <p style="color:var(--ink-soft);font-size:1.08rem;margin:0 0 4px">In Rwanda, children from the poorest families are often forced out of the classroom — not because they cannot learn, but because their families cannot afford the basics. Once out of school, many end up on the streets, and the cycle repeats.</p>
+      <ul class="serve-list">
+        <li>Tuition, uniforms, and materials families cannot afford</li>
+        <li>Hunger, and homes that are unstable or unsafe</li>
+        <li>Street life, dropout, and lost years of learning</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="photo-frame"><img src="images/students.jpg" alt="Children of the Barere cohort in class" loading="lazy"><div class="cap">The children Barere serves</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow center">What We Do</span>
+      <h2>A whole-child model that keeps children in school.</h2>
+      <p>We do not just get children back into class — we build the home and community conditions that let them stay.</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(245,184,37,.18)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8971B" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10v5c0 1.5 10 1.5 10 0v-5"/></svg></div>
+        <h3>Education Support</h3>
+        <p>Tuition, notebooks, uniforms, supplies, and school feeding — everything a child needs to enroll, take part fully, and stay in school.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(217,104,46,.16)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D9682E" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3>Mentorship</h3>
+        <p>One-on-one check-ins and group workshops that build confidence, life skills, and hope for a future beyond hard circumstances.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="ico" style="background:rgba(63,125,78,.16)"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3F7D4E" stroke-width="1.8"><path d="M12 21s-7-4.5-9-9a4.5 4.5 0 019-1 4.5 4.5 0 019 1c-2 4.5-9 9-9 9z"/></svg></div>
+        <h3>Family Support</h3>
+        <p>Because a child's challenges start at home, we help guardians build income and stability — including start-up funds for small businesses.</p>
+      </div>
+      <div class="pillar feature reveal">
+        <div class="ico" style="background:rgba(245,184,37,.22)"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E8971B" stroke-width="1.7"><path d="M4 13c0-3 3-5 6-5s6 2 6 5-2 5-6 5-6-2-6-5z"/><circle cx="8" cy="12" r="1" fill="#E8971B"/><path d="M16 10c2-1 4 0 4 2s-2 3-4 2"/><path d="M7 8V6M11 8V6"/></svg></div>
+        <div>
+          <h3>Nutrition &amp; the <span class="kinyarwanda">"Gira Ingurube"</span> passing-on model</h3>
+          <p style="margin:0;color:var(--ink-soft)">Every child received a chicken for nutrition. Next, families raise pigs — and pass piglets on to new families joining Barere. Each cohort empowers the next, in a cycle of shared responsibility and community ownership.</p>
+        </div>
+      </div>
+    </div>
+    <div class="center-cta reveal"><a class="btn btn-ghost" href="model.html">Explore our full model ↗</a></div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow center" style="color:var(--sun)">Our Impact So Far</span>
+      <h2>A meaningful start, in under a year.</h2>
+      <p>Since founding in June 2025, Barere has already changed lives in its first cohort.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal"><span class="n" data-count="23">23</span><span class="l">Children supported</span></div>
+      <div class="stat reveal"><span class="n" data-count="23">23</span><span class="l">Enrolled at GS Kibuye</span></div>
+      <div class="stat reveal"><span class="n" data-count="10">10+</span><span class="l">Mentorship workshops</span></div>
+      <div class="stat reveal"><span class="n" data-count="2">2</span><span class="l">Families given start-up funds</span></div>
+    </div>
+    <div class="center-cta reveal"><a class="btn btn-light" href="impact.html">See our full impact ↗</a></div>
+  </div>
+</section>
+
+<!-- VALUES -->
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow center">Our Purpose</span>
-      <h2>Keeping children in school by changing what happens at home.</h2>
-      <p>We work with the whole child — getting them enrolled, walking beside them through mentorship, and helping their families build lasting income. We began in Kibuye, with a vision to grow across all 30 districts of Rwanda.</p>
-      <div style="margin-top:26px"><a class="btn btn-primary" href="about.html">Our mission &amp; vision ↗</a></div>
+      <span class="eyebrow center">What We Believe</span>
+      <h2>Our values</h2>
     </div>
-    <div class="stat-lite reveal" style="margin-top:20px">
-      <div class="cell"><div class="n" data-count="23">23</div><div class="l">Children supported in our first cohort</div></div>
-      <div class="cell"><div class="n" data-count="10">10+</div><div class="l">Mentorship workshops held</div></div>
-      <div class="cell"><div class="n">100%</div><div class="l">Of school fees &amp; materials covered</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="pillars" style="padding-top:0">
-  <div class="wrap">
-    <div class="next-links reveal">
-      <a class="next-card" href="model.html"><span><span class="lbl">How it works</span><h3>Our four-pillar model</h3></span><span class="arrow">→</span></a>
-      <a class="next-card" href="impact.html"><span><span class="lbl">Results so far</span><h3>Impact to date</h3></span><span class="arrow">→</span></a>
-      <a class="next-card" href="vision.html"><span><span class="lbl">What is next</span><h3>The vision ahead</h3></span><span class="arrow">→</span></a>
-      <a class="next-card" href="team.html"><span><span class="lbl">Who we are</span><h3>Meet the team</h3></span><span class="arrow">→</span></a>
+    <div class="values-grid">
+      <div class="value reveal"><div class="vk">1</div><h3>The Whole Child</h3><p>We support the whole child — school, home, heart, and future — not just tuition.</p></div>
+      <div class="value reveal"><div class="vk">2</div><h3>Family at the Center</h3><p>Lasting change for a child begins with a stronger, more stable family.</p></div>
+      <div class="value reveal"><div class="vk">3</div><h3>Passing It On</h3><p>Through Gira Ingurube, every family we lift up goes on to lift up the next.</p></div>
+      <div class="value reveal"><div class="vk">4</div><h3>Every Child, Everywhere</h3><p>We began in Kibuye with a vision to reach all 30 districts of Rwanda.</p></div>
     </div>
   </div>
 </section>
 
-<section class="help" style="padding-top:0"><div class="wrap">
+<!-- TEAM TEASER -->
+<section class="mission">
+  <div class="wrap grid">
+    <div class="reveal">
+      <span class="eyebrow">Our Team</span>
+      <h2>Young leaders, driving change.</h2>
+      <p>Barere is powered by a small, growing team of people who refuse to let a child's future be decided by poverty — alongside the guardians, teachers, and partners who make every day of action possible.</p>
+      <a class="btn btn-light" href="team.html" style="margin-top:8px">Meet the team ↗</a>
+    </div>
+    <div class="reveal">
+      <div class="vm-card"><h3>Join us</h3><p>We are looking for mentors, coordinators, and partners who want to help Barere reach more children and families across Rwanda. If that sounds like you, we would love to talk.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE CTA -->
+<section class="help" style="padding-top:0;padding-bottom:80px"><div class="wrap" style="padding-top:80px">
   <div class="cta-final reveal">
     <h2>Give a child the classroom they deserve.</h2>
     <p>Barere's model is already working. Your support keeps children in school and helps their families build income that lasts for years to come.</p>
@@ -133,6 +221,7 @@
     </div>
   </div>
 </footer>
+
 <script>
   var mb=document.getElementById('menuBtn'),nl=document.getElementById('navLinks');
   mb.addEventListener('click',function(){nl.classList.toggle('open');});
@@ -142,19 +231,6 @@
   function animate(el){var target=parseInt(el.getAttribute('data-count'),10);var suffix=el.textContent.trim().endsWith('+')?'+':'';var t0=null,dur=1100;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var val=Math.floor((0.5-Math.cos(Math.PI*p)/2)*target);el.textContent=val+suffix;if(p<1)requestAnimationFrame(step);else el.textContent=target+suffix;}requestAnimationFrame(step);}
   var co=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){animate(en.target);co.unobserve(en.target);}});},{threshold:.5});
   document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el);});
-  /* hero slider */
-  (function(){
-    var track=document.getElementById('slides'); if(!track)return;
-    var slides=track.children, dots=document.querySelectorAll('.slider-dots button'), i=0, timer;
-    function go(n){i=(n+slides.length)%slides.length;track.style.transform='translateX('+(-i*100)+'%)';dots.forEach(function(d,k){d.classList.toggle('on',k===i);});}
-    function next(){go(i+1);} function prev(){go(i-1);}
-    function start(){timer=setInterval(next,5000);} function reset(){clearInterval(timer);start();}
-    var pn=document.querySelector('.slider-arrow.next'), pv=document.querySelector('.slider-arrow.prev');
-    if(pn)pn.addEventListener('click',function(){next();reset();});
-    if(pv)pv.addEventListener('click',function(){prev();reset();});
-    dots.forEach(function(d,k){d.addEventListener('click',function(){go(k);reset();});});
-    go(0);start();
-  })();
 </script>
 </body>
 </html>
