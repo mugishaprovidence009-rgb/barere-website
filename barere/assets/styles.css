@@ -28,7 +28,7 @@ img{max-width:100%;display:block}
 header.nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
-.brand .mark{width:44px;height:44px;flex:none}
+.brand .mark{width:44px;height:44px;flex:none;object-fit:contain}
 .brand b{font-family:Georgia,serif;font-size:1.28rem;letter-spacing:.02em;line-height:1}
 .brand small{display:block;font-family:-apple-system,sans-serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--leaf);font-weight:700;margin-top:3px}
 .nav-links{display:flex;align-items:center;gap:26px}
@@ -96,11 +96,12 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.86);bac
 
 /* interior page hero */
 .page-hero{background:radial-gradient(900px 420px at 85% -20%,rgba(245,184,37,.30),transparent 60%),linear-gradient(180deg,#FDF9F0,#F6EEDD);padding:64px 0 60px;border-bottom:1px solid var(--line)}
+.page-hero .wrap{text-align:center}
 .page-hero .crumbs{font-size:.82rem;color:var(--ink-soft);margin-bottom:14px}
 .page-hero .crumbs a{color:var(--ink-soft);text-decoration:none}
 .page-hero .crumbs a:hover{color:var(--terracotta)}
-.page-hero h1{font-size:clamp(2.1rem,4.4vw,3.2rem);margin:0 0 16px;max-width:20ch}
-.page-hero p{font-size:1.16rem;color:var(--ink-soft);margin:0;max-width:60ch}
+.page-hero h1{font-size:clamp(2.1rem,4.4vw,3.2rem);margin:0 auto 16px;max-width:20ch}
+.page-hero p{font-size:1.16rem;color:var(--ink-soft);margin:0 auto;max-width:60ch}
 
 section{padding:80px 0}
 .section-head{max-width:720px;margin:0 auto 52px;text-align:center}
