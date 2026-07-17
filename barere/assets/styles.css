@@ -244,15 +244,15 @@ section{padding:80px 0}
 
 /* footer */
 footer{background:var(--ink);color:rgba(251,246,236,.82);padding:56px 0 30px}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid{text-align:center;margin-bottom:24px}
 footer .brand b{color:#fff}
 footer p{font-size:.96rem;margin:14px 0 0;max-width:38ch}
 footer h4{color:#fff;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 16px}
-footer ul{list-style:none;padding:0;margin:0}
-footer li{margin-bottom:10px}
+footer ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+footer li{margin-bottom:0}
 footer a{color:rgba(251,246,236,.82);text-decoration:none}
 footer a:hover{color:var(--sun)}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.86rem;color:rgba(251,246,236,.6)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;text-align:center;font-size:.86rem;color:rgba(251,246,236,.6)}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -264,7 +264,7 @@ footer a:hover{color:var(--sun)}
   .hero-cta{justify-content:center}
   .hero-art{order:-1;max-width:340px;margin:0 auto}
   .mission .grid,.serve-grid,.budget-wrap{grid-template-columns:1fr;gap:34px}
-  .pillar-grid,.stat-grid,.impact-notes,.goal-band,.help-grid,.gallery-grid,.foot-grid,.next-links,.team-grid{grid-template-columns:1fr 1fr}
+  .pillar-grid,.stat-grid,.impact-notes,.goal-band,.help-grid,.gallery-grid,.next-links,.team-grid{grid-template-columns:1fr 1fr}
   .pillar.feature{grid-column:span 2;grid-template-columns:1fr}
   .stat .n{font-size:2.4rem}
 }
@@ -273,7 +273,7 @@ footer a:hover{color:var(--sun)}
   .menu-btn{display:block}
   .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--cream);padding:20px 24px;gap:16px;border-bottom:1px solid var(--line)}
   .nav-links.open a.active::after{display:none}
-  .pillar-grid,.stat-grid,.impact-notes,.goal-band,.help-grid,.gallery-grid,.foot-grid,.next-links,.team-grid{grid-template-columns:1fr}
+  .pillar-grid,.stat-grid,.impact-notes,.goal-band,.help-grid,.gallery-grid,.next-links,.team-grid{grid-template-columns:1fr}
   .pillar.feature{grid-column:span 1}
   .stat-lite{grid-template-columns:1fr 1fr;gap:10px}
   .slider-arrow{display:none}
