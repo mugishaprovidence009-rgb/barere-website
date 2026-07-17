@@ -7,19 +7,23 @@
 <meta name="description" content="Barere is a youth centered program in Rwanda helping vulnerable children return to and stay in school through education, mentorship, and sustainable family livelihoods.">
 <link rel="stylesheet" href="assets/styles.css">
 <style>
-  .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-  .value{background:#fff;border:1px solid var(--line);border-top:4px solid var(--sun);border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px -22px rgba(46,61,32,.4)}
+  .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+  .values-grid::before{content:"";position:absolute;left:12.5%;right:12.5%;top:53px;height:3px;background:linear-gradient(90deg,var(--sun),var(--terracotta),var(--leaf),var(--earth));z-index:0}
+  .value{position:relative;z-index:1;text-align:center;background:#fff;border:1px solid var(--line);border-top:4px solid var(--sun);border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px -22px rgba(46,61,32,.4)}
   .value:nth-child(2){border-top-color:var(--terracotta)}
   .value:nth-child(3){border-top-color:var(--leaf)}
   .value:nth-child(4){border-top-color:var(--earth)}
-  .value .vk{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(245,184,37,.18);color:var(--sun-deep);font-family:Georgia,serif;font-size:1.35rem;font-weight:700;margin-bottom:14px}
+  .value .vk{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(245,184,37,.18);color:var(--sun-deep);font-family:Georgia,serif;font-size:1.35rem;font-weight:700;margin:0 auto 14px;border:3px solid #fff;box-shadow:0 0 0 3px rgba(245,184,37,.35)}
+  .value:nth-child(2) .vk{background:rgba(217,104,46,.16);color:var(--terracotta);box-shadow:0 0 0 3px rgba(217,104,46,.3)}
+  .value:nth-child(3) .vk{background:rgba(63,125,78,.16);color:var(--leaf-deep);box-shadow:0 0 0 3px rgba(63,125,78,.3)}
+  .value:nth-child(4) .vk{background:rgba(107,74,43,.16);color:var(--earth);box-shadow:0 0 0 3px rgba(107,74,43,.3)}
   .value h3{font-size:1.1rem;margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:800}
   .value p{margin:0;color:var(--ink-soft);font-size:.97rem}
   .center-cta{text-align:center;margin-top:34px}
   .hero-overlay .wrap{text-align:center}
    .hero-overlay h1,.hero-overlay p{margin:0 auto 22px;text-align:center}
    .hero-overlay .hero-cta{justify-content:center}
-  @media(max-width:900px){.values-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:900px){.values-grid{grid-template-columns:1fr 1fr}.values-grid::before{display:none}}
   @media(max-width:640px){.values-grid{grid-template-columns:1fr}}
   .challenge{position:relative;overflow:hidden;background:var(--ink);color:#fdfaf3}
   .challenge::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 88% 0%,rgba(245,184,37,.16),transparent 60%),radial-gradient(600px 340px at 4% 100%,rgba(63,125,78,.22),transparent 55%);pointer-events:none}
