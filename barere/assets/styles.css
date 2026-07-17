@@ -75,7 +75,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.86);bac
 .hero-overlay .wrap{width:100%}
 .hero-overlay .eyebrow{color:var(--sun)}
 .hero-overlay .eyebrow::before{background:var(--sun)}
-.hero-overlay h1{color:#fff;font-size:clamp(2.9rem,7.2vw,5.4rem);font-weight:800;line-height:1.08;margin:0 0 22px;max-width:17ch;text-shadow:0 3px 30px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.5)}
+.hero-overlay h1{color:#fff;font-size:clamp(2.6rem,6.3vw,4.7rem);font-weight:800;line-height:1.08;margin:0 0 22px;max-width:17ch;text-shadow:0 3px 30px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.5)}
 .hero-overlay p{color:#fff;font-size:clamp(1.22rem,2.1vw,1.5rem);max-width:46ch;margin:0 0 32px;text-shadow:0 2px 18px rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.4)}
 .hero-overlay .hero-cta{pointer-events:auto}
 .hero-overlay .hero-cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6)}
