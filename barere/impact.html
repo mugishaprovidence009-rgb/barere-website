@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Impact · Barere Program</title>
-<meta name="description" content="Barere impact to date: 23 children enrolled and supported, mentorship workshops, family startup funds, and more.">
+<meta name="description" content="Barere impact to date and the vision ahead: 23 children enrolled and supported, mentorship workshops, family startup funds, and a path to all 30 districts of Rwanda.">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -15,10 +15,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="model.html">Our Model</a>
       <a href="impact.html" class="active">Impact</a>
-      <a href="vision.html">Vision</a>
-      <a href="team.html">Team</a>
       <a href="get-involved.html">Get Involved</a>
       <a class="btn btn-primary" href="get-involved.html#donate">Donate</a>
     </nav>
@@ -64,7 +61,33 @@
   </div>
 </section>
 
-<section style="padding-top:0"><div class="wrap"><div class="next-links"><a class="next-card" href="team.html"><span><span class="lbl">Who we are</span><h3>Meet the team</h3></span><span class="arrow">→</span></a><a class="next-card" href="get-involved.html"><span><span class="lbl">Take part</span><h3>Ways to help</h3></span><span class="arrow">→</span></a></div></div></section>
+<!-- VISION AHEAD -->
+<section id="vision">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow center">Vision Ahead</span>
+      <h2>Three goals for the next chapter</h2>
+      <p>From returning to school, to never leaving again: deepening our work with the children already enrolled, and strengthening their families' ability to provide stable homes.</p>
+    </div>
+    <div class="goal-band">
+      <div class="goal reveal"><div class="big">23</div><h3>Students kept in school</h3><p>Full annual tuition, school feeding, and supplies covered so every child stays enrolled.</p></div>
+      <div class="goal reveal"><div class="big">23</div><h3>Family pig enterprises</h3><p>One pig per family, plus shelters, feed, veterinary care, and farming training, as a lasting income source rather than a one time gift.</p></div>
+      <div class="goal reveal"><div class="big">∞</div><h3>A self sustaining cycle</h3><p>Each family passes piglets forward, so every new cohort is empowered by the last.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="impact" style="text-align:center">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:0">
+      <span class="eyebrow center" style="color:var(--sun)">The Long Term Vision</span>
+      <h2>Every district. Every child.</h2>
+      <p>Barere began in Kibuye, but the need reaches far beyond it. Our long term vision is to grow this whole child model into all <strong>30 districts of Rwanda</strong>, so that no child anywhere in the country is forced out of school by poverty.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0"><div class="wrap"><div class="next-links"><a class="next-card" href="about.html"><span><span class="lbl">Who we are</span><h3>About Barere</h3></span><span class="arrow">→</span></a><a class="next-card" href="get-involved.html"><span><span class="lbl">Take part</span><h3>Ways to help</h3></span><span class="arrow">→</span></a></div></div></section>
 
 <footer>
   <div class="wrap">
@@ -77,11 +100,9 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html">Mission &amp; Vision</a></li>
-          <li><a href="model.html">Our Model</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="impact.html">Impact</a></li>
-          <li><a href="vision.html">Vision Ahead</a></li>
-          <li><a href="team.html">Our Team</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
@@ -110,19 +131,6 @@
   function animate(el){var target=parseInt(el.getAttribute('data-count'),10);var suffix=el.textContent.trim().endsWith('+')?'+':'';var t0=null,dur=1100;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var val=Math.floor((0.5-Math.cos(Math.PI*p)/2)*target);el.textContent=val+suffix;if(p<1)requestAnimationFrame(step);else el.textContent=target+suffix;}requestAnimationFrame(step);}
   var co=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){animate(en.target);co.unobserve(en.target);}});},{threshold:.5});
   document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el);});
-  /* hero slider */
-  (function(){
-    var track=document.getElementById('slides'); if(!track)return;
-    var slides=track.children, dots=document.querySelectorAll('.slider-dots button'), i=0, timer;
-    function go(n){i=(n+slides.length)%slides.length;track.style.transform='translateX('+(-i*100)+'%)';dots.forEach(function(d,k){d.classList.toggle('on',k===i);});}
-    function next(){go(i+1);} function prev(){go(i-1);}
-    function start(){timer=setInterval(next,5000);} function reset(){clearInterval(timer);start();}
-    var pn=document.querySelector('.slider-arrow.next'), pv=document.querySelector('.slider-arrow.prev');
-    if(pn)pn.addEventListener('click',function(){next();reset();});
-    if(pv)pv.addEventListener('click',function(){prev();reset();});
-    dots.forEach(function(d,k){d.addEventListener('click',function(){go(k);reset();});});
-    go(0);start();
-  })();
 </script>
 </body>
 </html>
