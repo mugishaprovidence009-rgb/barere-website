@@ -8,8 +8,11 @@
 <link rel="stylesheet" href="assets/styles.css">
 <style>
   .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-  .value{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px -22px rgba(46,61,32,.4)}
-  .value .vk{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(245,184,37,.18);color:var(--sun-deep);font-family:Georgia,serif;font-size:1.35rem;font-weight:700;margin-bottom:14px}
+  .value{background:#fff;border:1px solid var(--line);border-top:4px solid var(--sun);border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px -22px rgba(46,61,32,.4)}
+  .value:nth-child(2){border-top-color:var(--terracotta)}
+  .value:nth-child(3){border-top-color:var(--leaf)}
+  .value:nth-child(4){border-top-color:var(--earth)}
+  .value .vk{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(245,184,37,.18);color:var(--sun-deep);font-family:Georgia,serif;font-size:1.35rem;font-weight:700;margin-bottom:14px}
   .value h3{font-size:1.1rem;margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:800}
   .value p{margin:0;color:var(--ink-soft);font-size:.97rem}
   .center-cta{text-align:center;margin-top:34px}
@@ -18,6 +21,12 @@
    .hero-overlay .hero-cta{justify-content:center}
   @media(max-width:900px){.values-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:640px){.values-grid{grid-template-columns:1fr}}
+  .challenge{position:relative;overflow:hidden}
+  .challenge::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 88% 0%,rgba(217,104,46,.16),transparent 60%),radial-gradient(600px 340px at 4% 100%,rgba(245,184,37,.18),transparent 55%);pointer-events:none}
+  .challenge .wrap{position:relative}
+  .challenge-card{max-width:760px;margin:26px auto 0;display:flex;gap:20px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:5px solid var(--terracotta);border-radius:var(--radius);padding:28px 32px;box-shadow:0 14px 34px -24px rgba(46,61,32,.35)}
+  .challenge-card .ico{flex:none;width:48px;height:48px;border-radius:12px;background:rgba(217,104,46,.14);display:flex;align-items:center;justify-content:center}
+  .challenge-card p{margin:0;color:var(--ink-soft);font-size:1.08rem}
 </style>
 </head>
 <body>
@@ -54,12 +63,15 @@
 </section>
 
 <!-- THE CHALLENGE -->
-<section>
+<section class="challenge">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow center">The Challenge</span>
       <h2 style="font-size:clamp(1.8rem,3.4vw,2.5rem);margin:0 0 16px">Too many children lose school to <span class="hl">poverty</span>.</h2>
-      <p style="color:var(--ink-soft);font-size:1.08rem;margin:0 0 4px">In Rwanda, children from the poorest families are often forced out of the classroom, not because they cannot learn, but because their families cannot afford the basics. Once out of school, many end up on the streets, and the cycle repeats.</p>
+    </div>
+    <div class="challenge-card reveal">
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D9682E" stroke-width="1.8"><path d="M12 9v4"/><circle cx="12" cy="16.3" r=".4" fill="#D9682E"/><path d="M10.6 3.9L2.9 18a1.6 1.6 0 001.4 2.4h15.4a1.6 1.6 0 001.4-2.4L13.4 3.9a1.6 1.6 0 00-2.8 0z"/></svg></div>
+      <p>In Rwanda, children from the poorest families are often forced out of the classroom, not because they cannot learn, but because their families cannot afford the basics. Once out of school, many end up on the streets, and the cycle repeats.</p>
     </div>
   </div>
 </section>
